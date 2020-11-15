@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9489af1-3b04-44d6-9b93-326b5c30c3f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FileMover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StockCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a9489af1-3b04-44d6-9b93-326b5c30c3f5" name="Default Changelist" comment="first init">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/stock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stock.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileMover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileMover.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +45,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stock" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -118,42 +121,69 @@
       <workItem from="1605437154035" duration="6000" />
       <workItem from="1605437175043" duration="18000" />
       <workItem from="1605437520838" duration="190000" />
-      <workItem from="1605437738725" duration="4906000" />
+      <workItem from="1605437738725" duration="5592000" />
     </task>
+    <task id="LOCAL-00001" summary="first init">
+      <created>1605443395653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605443395653</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="first init" />
+    <option name="LAST_COMMIT_MESSAGE" value="first init" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="453" y="278" key="#Notifications" timestamp="1605437752606">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="453" y="278" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1605437752606" />
+    <state x="208" y="28" key="#Project_Structure" timestamp="1605443305203">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="28" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1605443305203" />
     <state x="638" y="274" key="#xdebugger.evaluate" timestamp="1605438459077">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="638" y="274" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1605438459077" />
+    <state x="311" y="36" key="CommitChangelistDialog2" timestamp="1605443691205">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="311" y="36" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605443691205" />
     <state width="407" height="466" key="DebuggerActiveHint" timestamp="1605438392092">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="407" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1605438392092" />
-    <state width="1398" height="312" key="GridCell.Tab.0.bottom" timestamp="1605443038534">
+    <state width="1398" height="276" key="GridCell.Tab.0.bottom" timestamp="1605443745603">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605443038534" />
-    <state width="1398" height="312" key="GridCell.Tab.0.center" timestamp="1605443038532">
+    <state width="1398" height="276" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605443745603" />
+    <state width="1398" height="276" key="GridCell.Tab.0.center" timestamp="1605443745601">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605443038532" />
-    <state width="1398" height="312" key="GridCell.Tab.0.left" timestamp="1605443038531">
+    <state width="1398" height="276" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605443745601" />
+    <state width="1398" height="276" key="GridCell.Tab.0.left" timestamp="1605443745600">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605443038531" />
-    <state width="1398" height="312" key="GridCell.Tab.0.right" timestamp="1605443038533">
+    <state width="1398" height="276" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605443745600" />
+    <state width="1398" height="276" key="GridCell.Tab.0.right" timestamp="1605443745602">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605443038533" />
+    <state width="1398" height="276" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605443745602" />
     <state width="1398" height="312" key="GridCell.Tab.1.bottom" timestamp="1605438519853">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

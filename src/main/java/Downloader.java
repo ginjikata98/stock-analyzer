@@ -6,10 +6,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.*;
 
 public class Downloader {
     public static void downloadFromTxt(String file) throws InterruptedException {
@@ -45,10 +44,22 @@ public class Downloader {
         WebElement submitBtn = driver.findElement(new By.ByXPath("/html/body/div[6]/table/tbody/tr/td[5]/form/table/tbody/tr[7]/td[2]/input"));
 
 
-        submitBtn.click();
+        try (InputStream input = Downloader.class.getClassLoader().getResourceAsStream("config.properties")) {
+            Properties prop = new Properties();
+            prop.load(input);
+
+            username.sendKeys(prop.getProperty("username"));
+            password.sendKeys(prop.getProperty("password"));
+            submitBtn.click();
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
 
         Thread.sleep(1000);
 
         urls.forEach(driver::get);
+
+        Thread.sleep(1000);
     }
 }

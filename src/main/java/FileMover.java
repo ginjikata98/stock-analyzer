@@ -18,7 +18,7 @@ public class FileMover {
         try {
             List<String> files = paths
                     .filter(Files::isRegularFile)
-                    .filter(p -> p.getFileName().toString().toLowerCase().matches("^\\w{3}\\.txt"))
+                    .filter(p -> p.getFileName().toString().toLowerCase().matches("^\\w{3}\\.txt$"))
                     .map(Path::toString)
                     .collect(Collectors.toList());
 
