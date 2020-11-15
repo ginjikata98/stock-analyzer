@@ -5,15 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9489af1-3b04-44d6-9b93-326b5c30c3f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../10fast/src/main/resources/credentials.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../10fast/src/main/resources/credentials.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileMover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StockCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stock.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -26,7 +40,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1kK6tHJGNwtNQl2bQ3braLPPvwJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,6 +52,60 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StockCrawler">
+    <configuration name="Downloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Downloader" />
+      <module name="stock-analyzer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileMover" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileMover" />
+      <module name="stock-analyzer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockCrawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StockCrawler" />
+      <module name="stock-analyzer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StockCrawler" />
+        <item itemvalue="Application.FileMover" />
+        <item itemvalue="Application.Downloader" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,10 +117,62 @@
       <updated>1605437152935</updated>
       <workItem from="1605437154035" duration="6000" />
       <workItem from="1605437175043" duration="18000" />
+      <workItem from="1605437520838" duration="190000" />
+      <workItem from="1605437738725" duration="4906000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="453" y="278" key="#Notifications" timestamp="1605437752606">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="453" y="278" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1605437752606" />
+    <state x="638" y="274" key="#xdebugger.evaluate" timestamp="1605438459077">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="638" y="274" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1605438459077" />
+    <state width="407" height="466" key="DebuggerActiveHint" timestamp="1605438392092">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="407" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1605438392092" />
+    <state width="1398" height="312" key="GridCell.Tab.0.bottom" timestamp="1605443038534">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="312" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605443038534" />
+    <state width="1398" height="312" key="GridCell.Tab.0.center" timestamp="1605443038532">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="312" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605443038532" />
+    <state width="1398" height="312" key="GridCell.Tab.0.left" timestamp="1605443038531">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="312" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605443038531" />
+    <state width="1398" height="312" key="GridCell.Tab.0.right" timestamp="1605443038533">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="312" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605443038533" />
+    <state width="1398" height="312" key="GridCell.Tab.1.bottom" timestamp="1605438519853">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="312" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605438519853" />
+    <state width="1398" height="312" key="GridCell.Tab.1.center" timestamp="1605438519852">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="312" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605438519852" />
+    <state width="1398" height="312" key="GridCell.Tab.1.left" timestamp="1605438519851">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="312" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605438519851" />
+    <state width="1398" height="312" key="GridCell.Tab.1.right" timestamp="1605438519852">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="312" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605438519852" />
+    <state x="229" y="86" key="SettingsEditor" timestamp="1605437760173">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605437760173" />
   </component>
 </project>
