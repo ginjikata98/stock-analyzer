@@ -1,3 +1,5 @@
 /target
 /stock
 /src/main/resources/config.properties
+winner.txt
+.idea

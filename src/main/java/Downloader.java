@@ -11,15 +11,19 @@ import java.io.InputStream;
 import java.util.*;
 
 public class Downloader {
+    private Downloader() {
+    }
+
     public static void downloadFromTxt(String file) throws InterruptedException {
-        List<String> urls = new ArrayList<>();
+//        List<String> priceUrls = new ArrayList<>();
+        List<String> priceUrls = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = br.readLine()) != null) {
                 line = line.replaceAll("\\s+", "");
                 String url = String.format("https://www.cophieu68.vn/export/metastock.php?id=%s&df=&dt=", line);
-                urls.add(url);
+                priceUrls.add(url);
             }
 
         } catch (Exception e) {
@@ -58,7 +62,7 @@ public class Downloader {
 
         Thread.sleep(1000);
 
-        urls.forEach(driver::get);
+        priceUrls.forEach(driver::get);
 
         Thread.sleep(1000);
     }

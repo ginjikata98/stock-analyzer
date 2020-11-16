@@ -10,12 +10,14 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class FileMover {
+    private FileMover() {
+    }
+
     public static void moveAllFile() throws IOException {
         FileUtils.deleteDirectory(new File("stock"));
         File stock = new File("stock");
 
-        Stream<Path> paths = Files.walk(Paths.get(""));
-        try {
+        try (Stream<Path> paths = Files.walk(Paths.get(""))) {
             List<String> files = paths
                     .filter(Files::isRegularFile)
                     .filter(p -> p.getFileName().toString().toLowerCase().matches("^\\w{3}\\.txt$"))
@@ -29,10 +31,6 @@ public class FileMover {
                     e.printStackTrace();
                 }
             });
-        } finally {
-            if (null != paths) {
-                paths.close();
-            }
         }
     }
 }
