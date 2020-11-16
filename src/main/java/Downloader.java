@@ -1,13 +1,11 @@
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.*;
 
 public class Downloader {
@@ -15,17 +13,16 @@ public class Downloader {
     }
 
     public static void downloadFromTxt(String file) throws InterruptedException {
-//        List<String> priceUrls = new ArrayList<>();
+        List<String> dividendUrls = new ArrayList<>();
         List<String> priceUrls = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = br.readLine()) != null) {
                 line = line.replaceAll("\\s+", "");
-                String url = String.format("https://www.cophieu68.vn/export/metastock.php?id=%s&df=&dt=", line);
-                priceUrls.add(url);
+                priceUrls.add(String.format("https://www.cophieu68.vn/export/metastock.php?id=%s", line));
+                dividendUrls.add(String.format("https://www.cophieu68.vn/eventschedule.php?id=%s", line));
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -63,6 +60,17 @@ public class Downloader {
         Thread.sleep(1000);
 
         priceUrls.forEach(driver::get);
+
+        dividendUrls.forEach(url -> {
+            try {
+                driver.get(url);
+                Thread.sleep(1000);
+                File a = new File("dividend/" + url.substring(url.length() - 3) + ".html");
+                FileUtils.writeStringToFile(a, driver.getPageSource(), "UTF-8");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
 
         Thread.sleep(1000);
     }

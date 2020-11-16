@@ -12,3 +12,16 @@ L
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 9
 	stock.txt,3/5/354fc529463d804bc10008b12edcbe5507a4dc25
+=
+stock/tch.txt,2/f/2f1d1db78a9b5821f8dc7d0d2f0866269d6975ef
+:
+
+winner.txt,8/4/8409434dfe83ddff6731a6d4029f5e988a08cc41
+A
+dividend/BID.html,6/b/6bf7944acf9537e2ac4ee08ee4a83a524fe45d9a
+P
+ src/main/java/StockAnalyzer.java,a/9/a93cd22deb7080838d36ea189b01a1f11150195e
+Q
+!src/main/java/AnalysisResult.java,a/9/a98c3d1414128383fbf62807a589929ca16d55e3
+G
+src/main/java/Test.java,b/6/b660a5f333c00ef78dec1d85c727eb000157c1f3
