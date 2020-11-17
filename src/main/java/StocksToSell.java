@@ -21,12 +21,13 @@ public class StocksToSell {
             for (String holding : holdings) {
                 if (!winners.contains(holding)) {
                     stocksToSell.add(holding);
+                } else {
+                    winners.remove(holding);
                 }
             }
 
-            System.out.println(winners);
-            System.out.println(holdings);
-            System.out.println(stocksToSell);
+            System.out.println("Stocks to buy: " + winners);
+            System.out.println("Stocks to sell: " + stocksToSell);
         } catch (Exception e) {
             e.printStackTrace();
         }

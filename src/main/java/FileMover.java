@@ -13,9 +13,9 @@ public class FileMover {
     private FileMover() {
     }
 
-    public static void moveAllFile() throws IOException {
-        FileUtils.deleteDirectory(new File("stock"));
-        File stock = new File("stock");
+    public static void moveAllFile(String path) throws IOException {
+        FileUtils.deleteDirectory(new File(path));
+        File stock = new File(path);
 
         try (Stream<Path> paths = Files.walk(Paths.get(""))) {
             List<String> files = paths

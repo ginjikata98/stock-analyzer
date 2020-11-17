@@ -1,3 +1,4 @@
+import model.AnalysisResult;
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -36,7 +37,7 @@ public class StockAnalyzer {
 
             files.forEach(file -> {
                 AnalysisResult result = txtAnalyzer(file, true);
-                if (result.getRoi() > 7)
+                if (result != null && result.getRoi() > 7)
                     winners.append(result.getSticker() + "\n");
             });
 
@@ -114,6 +115,10 @@ public class StockAnalyzer {
             LocalDate lastDay = LocalDate.parse(lastDayData[1], formatter);
             currentPrice = Double.parseDouble(lastDayData[5]) * 1000;
 
+            double year = ChronoUnit.DAYS.between(firstDay, lastDay) / 365F;
+            if (year < 5)
+                return null;
+
             for (String line : lines) {
                 String[] data = line.replaceAll("\\s+", "").split(",");
                 LocalDate date = LocalDate.parse(data[1], formatter);
@@ -149,8 +154,6 @@ public class StockAnalyzer {
             }
 
             double currentNetWorth = totalStockOwned * currentPrice + balance;
-
-            double year = ChronoUnit.DAYS.between(firstDay, lastDay) / 365F;
 
             double roi = (Math.pow(currentNetWorth / totalInvested, 1 / year) - 1) * 100;
 

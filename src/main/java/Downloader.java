@@ -12,7 +12,7 @@ public class Downloader {
     private Downloader() {
     }
 
-    public static void downloadFromTxt(String file) throws InterruptedException {
+    public static void downloadFromTxt(String file, String dividendPath) throws InterruptedException {
         List<String> dividendUrls = new ArrayList<>();
         List<String> priceUrls = new ArrayList<>();
 
@@ -59,13 +59,19 @@ public class Downloader {
 
         Thread.sleep(1000);
 
-        priceUrls.forEach(driver::get);
+        priceUrls.forEach(url -> {
+            try {
+                driver.get(url);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
 
         dividendUrls.forEach(url -> {
             try {
                 driver.get(url);
                 Thread.sleep(1000);
-                File a = new File("dividend/" + url.substring(url.length() - 3) + ".html");
+                File a = new File(dividendPath + "/" + url.substring(url.length() - 3) + ".html");
                 FileUtils.writeStringToFile(a, driver.getPageSource(), "UTF-8");
             } catch (Exception e) {
                 e.printStackTrace();
