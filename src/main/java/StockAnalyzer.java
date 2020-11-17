@@ -122,19 +122,14 @@ public class StockAnalyzer {
                 String dividendData = dividendMap.get(dividendPayday);
 
                 if (dividendData != null) {
-//                    System.out.printf("dividend day %s %s%n", sticker, dividendPayday);
                     if (dividendData.contains("/")) {
                         double first = Double.parseDouble(dividendData.split("/")[0]);
                         double second = Double.parseDouble(dividendData.split("/")[1]);
-//                        System.out.printf("Split day %f, %f%n", first, second);
-//                        System.out.printf("totalStockOwned %d%n", totalStockOwned);
                         int newStock = (int) (Math.floor(totalStockOwned / first) * second);
                         totalStockOwned += newStock;
-//                        System.out.printf("new stock %d%n", newStock);
                     } else {
                         int dividendMoney = totalStockOwned * Integer.parseInt(dividendData);
                         balance += dividendMoney;
-//                        System.out.printf("Money day: %d%n", dividendMoney);
                     }
                 }
 

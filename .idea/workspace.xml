@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9489af1-3b04-44d6-9b93-326b5c30c3f5" name="Default Changelist" comment="update config.properties">
-      <change afterPath="$PROJECT_DIR$/currentHolding.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Differences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Metrics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StockAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StockAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StocksToSell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StocksToSell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,9 +91,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StocksToSell">
-    <configuration name="FileMover" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FileMover" />
+  <component name="RunManager" selected="Application.Metrics">
+    <configuration name="Metrics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Metrics" />
       <module name="stock-analyzer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Metrics" />
         <item itemvalue="Application.StocksToSell" />
         <item itemvalue="Application.StockAnalyzer" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.StockCrawler" />
-        <item itemvalue="Application.FileMover" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +164,7 @@
       <workItem from="1605437738725" duration="5985000" />
       <workItem from="1605490884572" duration="507000" />
       <workItem from="1605510608150" duration="11911000" />
-      <workItem from="1605531362179" duration="5066000" />
+      <workItem from="1605531362179" duration="6397000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1605443395653</created>
@@ -193,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605537604716</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add StocksToSell.java">
+      <created>1605577971084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605577971084</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +221,8 @@
     <MESSAGE value="update config.properties" />
     <MESSAGE value="add stock analyzer" />
     <MESSAGE value="add dividend factor" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dividend factor" />
+    <MESSAGE value="add StocksToSell.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="add StocksToSell.java" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -237,30 +246,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="638" y="274" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1605438459077" />
-    <state x="311" y="36" key="CommitChangelistDialog2" timestamp="1605537604495">
+    <state x="311" y="36" key="CommitChangelistDialog2" timestamp="1605577970930">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="311" y="36" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605537604495" />
+    <state x="311" y="36" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605577970930" />
     <state width="512" height="466" key="DebuggerActiveHint" timestamp="1605535832123">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="512" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1605535832123" />
-    <state width="1398" height="329" key="GridCell.Tab.0.bottom" timestamp="1605577430051">
+    <state width="1398" height="329" key="GridCell.Tab.0.bottom" timestamp="1605577903738">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605577430051" />
-    <state width="1398" height="329" key="GridCell.Tab.0.center" timestamp="1605577430049">
+    <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605577903738" />
+    <state width="1398" height="329" key="GridCell.Tab.0.center" timestamp="1605577903736">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="329" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605577430049" />
-    <state width="1398" height="329" key="GridCell.Tab.0.left" timestamp="1605577430047">
+    <state width="1398" height="329" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605577903736" />
+    <state width="1398" height="329" key="GridCell.Tab.0.left" timestamp="1605577903736">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="329" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605577430047" />
-    <state width="1398" height="329" key="GridCell.Tab.0.right" timestamp="1605577430050">
+    <state width="1398" height="329" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605577903736" />
+    <state width="1398" height="329" key="GridCell.Tab.0.right" timestamp="1605577903737">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="329" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605577430050" />
+    <state width="1398" height="329" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605577903737" />
     <state width="1398" height="102" key="GridCell.Tab.1.bottom" timestamp="1605536244265">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -285,10 +294,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605510656933" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605537606083">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605577972139">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605537606083" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605577972139" />
     <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1605521103685">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
