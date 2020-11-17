@@ -21,7 +21,11 @@ A
 dividend/BID.html,6/b/6bf7944acf9537e2ac4ee08ee4a83a524fe45d9a
 P
  src/main/java/StockAnalyzer.java,a/9/a93cd22deb7080838d36ea189b01a1f11150195e
-Q
-!src/main/java/AnalysisResult.java,a/9/a98c3d1414128383fbf62807a589929ca16d55e3
-G
-src/main/java/Test.java,b/6/b660a5f333c00ef78dec1d85c727eb000157c1f3
+B
+currentHolding.txt,f/a/fa1fbd996f8b0ca93455e449474befd5a88f5146
+J
+src/main/java/Metrics.java,4/d/4da06b0e2816c7c79910fba8db1e0404260eff84
+W
+'src/main/java/model/AnalysisResult.java,5/d/5d9ba83f06d9b4fe2b044fa7f53d2c80958a219b
+O
+src/main/java/StocksToSell.java,e/3/e3e594612b2a3d461a43f7c3c98c24136e3d0b97

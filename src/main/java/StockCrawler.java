@@ -1,3 +1,6 @@
+import utils.Downloader;
+import utils.FileMover;
+
 import java.io.IOException;
 
 public class StockCrawler {

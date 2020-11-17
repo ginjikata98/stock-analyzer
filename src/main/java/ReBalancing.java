@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class StocksToSell {
+public class ReBalancing {
     public static void main(String[] args) {
         try {
             Set<String> winners = FileUtils.readLines(new File("winner.txt"), Charset.defaultCharset())

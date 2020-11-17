@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9489af1-3b04-44d6-9b93-326b5c30c3f5" name="Default Changelist" comment="update config.properties">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AutoBankDeposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb31951790c271e26d568f9ac5b7681e7f0804ec" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb31951790c271e26d568f9ac5b7681e7f0804ec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AnalysisResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/AnalysisResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Downloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StockAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StockAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StocksToSell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StocksToSell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileMover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileMover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StockCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StockCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StocksToSell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReBalancing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,17 +87,44 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/stock" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/stock" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.StocksToSell">
+  <component name="RunManager" selected="Application.AutoBankDeposit">
+    <configuration name="AutoBankDeposit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AutoBankDeposit" />
+      <module name="stock-analyzer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileMover" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.FileMover" />
+      <module name="stock-analyzer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Metrics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Metrics" />
+      <module name="stock-analyzer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReBalancing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReBalancing" />
       <module name="stock-analyzer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,47 +137,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StockCrawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StockCrawler" />
-      <module name="stock-analyzer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StocksToSell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StocksToSell" />
-      <module name="stock-analyzer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="stock-analyzer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StocksToSell" />
+        <item itemvalue="Application.AutoBankDeposit" />
+        <item itemvalue="Application.ReBalancing" />
+        <item itemvalue="Application.FileMover" />
         <item itemvalue="Application.StockAnalyzer" />
         <item itemvalue="Application.Metrics" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.StockCrawler" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +172,8 @@
       <workItem from="1605437738725" duration="5985000" />
       <workItem from="1605490884572" duration="507000" />
       <workItem from="1605510608150" duration="11911000" />
-      <workItem from="1605531362179" duration="8421000" />
+      <workItem from="1605531362179" duration="9488000" />
+      <workItem from="1605596649429" duration="2269000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1605443395653</created>
@@ -210,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605580124045</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor code">
+      <created>1605582151400</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605582151400</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +246,8 @@
     <MESSAGE value="add dividend factor" />
     <MESSAGE value="add StocksToSell.java" />
     <MESSAGE value="Metrics.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Metrics.java" />
+    <MESSAGE value="refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -256,46 +271,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="638" y="274" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1605438459077" />
-    <state x="311" y="36" key="CommitChangelistDialog2" timestamp="1605580123842">
+    <state x="311" y="36" key="CommitChangelistDialog2" timestamp="1605582151198">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="311" y="36" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605580123842" />
-    <state width="512" height="466" key="DebuggerActiveHint" timestamp="1605535832123">
+    <state x="311" y="36" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605582151198" />
+    <state width="512" height="466" key="DebuggerActiveHint" timestamp="1605596776840">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="512" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1605535832123" />
-    <state width="1398" height="383" key="GridCell.Tab.0.bottom" timestamp="1605581500896">
+    <state width="512" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1605596776840" />
+    <state width="1398" height="260" key="GridCell.Tab.0.bottom" timestamp="1605597979691">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="383" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605581500896" />
-    <state width="1398" height="383" key="GridCell.Tab.0.center" timestamp="1605581500894">
+    <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605597979691" />
+    <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1605597558406" />
+    <state width="1398" height="260" key="GridCell.Tab.0.center" timestamp="1605597979688">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="383" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605581500894" />
-    <state width="1398" height="383" key="GridCell.Tab.0.left" timestamp="1605581500893">
+    <state width="1398" height="260" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605597979688" />
+    <state width="1398" height="260" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1605597558404" />
+    <state width="1398" height="260" key="GridCell.Tab.0.left" timestamp="1605597979687">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="383" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605581500893" />
-    <state width="1398" height="383" key="GridCell.Tab.0.right" timestamp="1605581500895">
+    <state width="1398" height="260" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605597979687" />
+    <state width="1398" height="260" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1605597558403" />
+    <state width="1398" height="260" key="GridCell.Tab.0.right" timestamp="1605597979689">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="383" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605581500895" />
-    <state width="1398" height="102" key="GridCell.Tab.1.bottom" timestamp="1605536244265">
+    <state width="1398" height="260" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605597979689" />
+    <state width="1398" height="260" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1605597558405" />
+    <state width="1398" height="102" key="GridCell.Tab.1.bottom" timestamp="1605596804920">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="102" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605536244265" />
-    <state width="1398" height="102" key="GridCell.Tab.1.center" timestamp="1605536244265">
+    <state width="1398" height="102" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605596804920" />
+    <state width="1398" height="102" key="GridCell.Tab.1.center" timestamp="1605596804918">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="102" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605536244265" />
-    <state width="1398" height="102" key="GridCell.Tab.1.left" timestamp="1605536244264">
+    <state width="1398" height="102" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605596804918" />
+    <state width="1398" height="102" key="GridCell.Tab.1.left" timestamp="1605596804917">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="102" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605536244264" />
-    <state width="1398" height="102" key="GridCell.Tab.1.right" timestamp="1605536244265">
+    <state width="1398" height="102" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605596804917" />
+    <state width="1398" height="102" key="GridCell.Tab.1.right" timestamp="1605596804919">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="102" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605536244265" />
+    <state width="1398" height="102" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605596804919" />
     <state x="496" y="156" key="RollbackChangesDialog" timestamp="1605519316995">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -304,10 +323,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605510656933" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605580125473">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605582152573">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605580125473" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605582152573" />
     <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1605521103685">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
