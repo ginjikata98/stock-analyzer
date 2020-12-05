@@ -7,6 +7,7 @@ import org.jsoup.select.Elements;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -42,7 +43,7 @@ public class StockAnalyzer {
             });
 
             File result = new File("winner.txt");
-            FileUtils.writeStringToFile(result, winners.toString(), Charset.defaultCharset());
+            FileUtils.writeStringToFile(result, winners.toString(), StandardCharsets.UTF_8);
         }
     }
 

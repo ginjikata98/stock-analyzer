@@ -4,3 +4,5 @@
 winner.txt
 .idea
 /dividend
+.idea/*
+*.properties
